@@ -1,0 +1,28 @@
+.year {
+  display: flex;
+
+  &:last-child {
+    margin-bottom: 22px;
+  }
+
+  &__item {
+    border: 1px solid #BCBCBC;
+    padding: 9px 9px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #3D3D3D;
+    cursor: pointer;
+
+    &.active {
+      border-color: #111111;
+      font-weight: bold;
+    }
+
+    &:hover {
+      border-color: #111111;
+      font-weight: bold;
+    }
+  }
+}

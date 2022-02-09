@@ -1,0 +1,103 @@
+.icon-search {
+  width: 21px;
+  height: 20px;
+  fill: white;
+  transition: .3s;
+}
+
+.icon-user {
+  width: 26px;
+  height: 26px;
+  fill: white;
+  transition: .3s;
+}
+
+.icon-favorite {
+  width: 26px;
+  height: 26px;
+  fill: white;
+  transition: .3s;
+}
+
+.icon-cart {
+  width: 26px;
+  height: 25px;
+  fill: white;
+  transition: .3s;
+}
+
+.icon-home {
+  width: 15px;
+  height: 18px;
+  fill: #BCBCBC;
+}
+
+.icon-arrow-right {
+  width: 6px;
+  height: 12px;
+  fill: #8D8D8D;
+  margin-left: 14px;
+}
+
+.icon-grid-blocks {
+  width: 16px;
+  height: 15px;
+  fill: #8D8D8D;
+  transition: .3s;
+}
+
+.icon-grid-line {
+  width: 18px;
+  height: 18px;
+  fill: #8D8D8D;
+  transition: .3s;
+}
+
+.icon-star {
+  width: 26px;
+  height: 26px;
+}
+
+.icon-message {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-arrow-circle {
+  width: 45px;
+  height: 40px;
+  fill: black;
+}
+
+.icon-dable-arrow-left {
+  width: 23px;
+  height: 22px;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}
+
+.icon-arrow-left {
+  width: 16px;
+  height: 22px;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}
+
+.icon-instagram {
+  width: 15px;
+  height: 15px;
+}
+
+.icon-facebook {
+  width: 10px;
+  height: 20px;
+}
+
+.icon-youtube {
+  width: 18px;
+  height: 12px;
+}

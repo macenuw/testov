@@ -1,0 +1,116 @@
+.header {
+  background-color: black;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 36px 0 38px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0 7px;
+  }
+
+  &__cooperation {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+    &--mob {
+      display: none;
+    }
+  }
+
+  &__cooperation-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cooperation-style {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    background: none;
+    transition: .3s;
+    cursor: pointer;
+
+    &[type=button] {
+      color:
+        rgba(196, 196, 196, 0.5);
+
+      &.active {
+        color: $darkGray;
+      }
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__cooperation-link {
+    margin-right: 21px;
+    color: $darkGray;
+  }
+
+  &__coooperation-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cooperation-item {
+    padding: 0 9px;
+
+    &:not(:last-child) {
+      border-right: 2px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__contact-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact-item {
+    &:not(:last-child) {
+      border-right: 2px solid $darkGray;
+      padding: 0 20px;
+    }
+
+    &:not(:first-child) {
+      padding-left: 20px;
+    }
+  }
+
+  &__contact-btn {
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__contact-link,
+  &__contact-btn {
+    font-weight: bold;
+    font-size: 18px;
+    color: #DDDDDD;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      color: white;
+    }
+  }
+}

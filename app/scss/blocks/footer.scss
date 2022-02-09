@@ -1,0 +1,125 @@
+.footer {
+  background-color: $black;
+  padding: 150px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 133px;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__address-tel {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: normal;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+  }
+
+  &__address-list {
+    margin-bottom: 33px;
+  }
+
+  &__address-item {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: normal;
+    color: #FFFFFF;
+  }
+
+  &__address-address {
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: normal;
+    color: #FFFFFF;
+  }
+
+  &__address-city {}
+
+  &__address-street {}
+
+  &__menu {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .menu__item {
+      padding: 0;
+
+      &:not(:last-child) {
+        border-right: none;
+      }
+    }
+
+    .menu__link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 35px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__delivery-payment {
+    display: flex;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 48px;
+    color: #8D8D8D;
+  }
+
+  &__delivery-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px 45px;
+  }
+
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__social-img {
+    &:not(:last-child) {
+      margin-right: 43px;
+    }
+  }
+
+  &__copyright {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 48px;
+    color: #BCBCBC;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 44px;
+      bottom: 10px;
+      right: 0;
+      background-color: $green;
+    }
+  }
+}

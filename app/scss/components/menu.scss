@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    padding: 0;
+    padding-right: 31px;
+
+    &:not(:first-child) {
+      padding: 0 31px;
+    }
+
+    &:not(:last-child) {
+      border-right: 2px solid $darkGray;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    color: #8D8D8D;
+    transition: .3s;
+
+    &.active {
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}

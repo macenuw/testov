@@ -1,0 +1,147 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 21px;
+  background-color: white;
+
+  &__img-inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+  }
+
+  &__img {
+    max-width: 302px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__grade {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__feedback {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-message {
+    margin-right: 11px;
+  }
+
+  &__feedback-amount {
+    margin-right: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #BCBCBC;
+  }
+
+  &__feedback-text {
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #BCBCBC;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price-grn {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #111111;
+  }
+
+  &__number {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BCBCBC;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+    margin-bottom: 12px;
+  }
+
+  &__more-info {
+    margin-bottom: 17px;
+  }
+
+  &__more-item {}
+
+  &__more-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+  }
+
+  &__more-details {
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+  }
+
+  &__accent {
+    color: $green;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: 15px 1px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    width: 100%;
+    background: none;
+    box-shadow: none;
+    transition: .3s;
+    border: 2px solid #111111;
+    color: #111111;
+
+    &:hover {
+      color: white;
+      background-color: #111111;
+    }
+
+    &:last-child {
+      color: white;
+      background-color: #111111;
+
+      &:hover {
+        background-color: transparent;
+        color: #111111;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.filter {
+  max-width: 352px;
+  width: 100%;
+  background-color: $black;
+  padding-top: 28px;
+  margin-right: 22px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 25px 22px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 26px;
+      width: 17px;
+      top: 4px;
+      right: 25px;
+      background-image: url('../images/filter.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__body {
+    padding: 45px 25px 48px;
+    background-color: #282828;
+  }
+
+  &__select {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: #282828;
+    padding: 23px 0;
+    border: 2px solid $green;
+    color: #8D8D8D;
+    transition: .3s;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+
+    &:hover {
+      background-color: $green;
+      color: #282828;
+    }
+
+    &:last-child {
+      background-color: $green;
+      color: #282828;
+
+      svg {
+        fill: #282828;
+      }
+
+      &:hover {
+        background-color: #282828;
+        color: #8D8D8D;
+
+        svg {
+          fill: #8D8D8D;
+        }
+      }
+    }
+  }
+}
