@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__inner container">
+            <div class="header__cooperation">
+                <a href="#" class="header__cooperation-style header__cooperation-link">Сотрудничество</a>
+                <ul class="header__cooperation-list">
+                    <li class="header__cooperation-item">
+                        <button class="header__cooperation-style active" type="button">Рус</button>
+                    </li>
+                    <li class="header__cooperation-item">
+                        <button class="header__cooperation-style" type="button">Укр</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__row">
+                <a href="#" class="logo header__logo">
+                    <img src="../images/logo.png" alt="" class="logo__img">
+                </a>
+                <div class="user header__user">
+                    <label for="search" class="user__search">
+                        <input type="text" class="user__input" id="search" placeholder="Введите марку машины">
+                        <span class="user__search-dec">
+                            <svg class="icon-search">
+                                <use xlink:href="images/allsvg.svg#search"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <ul class="user__list">
+                        <li class="user__item user__item--search">
+                            <button class="user__btn">
+                                <svg class="icon-search">
+                                    <use xlink:href="images/allsvg.svg#search"></use>
+                                </svg>
+                                <span class="visually-hidden">Поиск</span>
+                            </button>
+                        </li>
+                        <li class="user__item user__item--user">
+                            <button class="user__btn active">
+                                <svg class="icon-user">
+                                    <use xlink:href="images/allsvg.svg#user"></use>
+                                </svg>
+                                <span class="visually-hidden">Личный кабинет</span>
+                            </button>
+                        </li>
+                        <li class="user__item user__item--favorite">
+                            <button class="user__btn">
+                                <svg class="icon-favorite">
+                                    <use xlink:href="images/allsvg.svg#favorite"></use>
+                                </svg>
+                                <span class="visually-hidden">Избранное</span>
+                            </button>
+                        </li>
+                        <li class="user__item user__item--cart">
+                            <button class="user__btn">
+                                <svg class="icon-cart">
+                                    <use xlink:href="images/allsvg.svg#cart"></use>
+                                </svg>
+                                <span class="visually-hidden">Корзина</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__row">
+                <ul class="menu header__menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link active">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Установка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Оплата/доставка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__cooperation header__cooperation--mob"></div>
+                <ul class="header__contact-list">
+                    <li class="header__contact-item">
+                        <a href="tel:+380990101500" class="header__contact-link">+38(099) 01 01 500</a>
+                    </li>
+                    <li class="header__contact-item">
+                        <button class="header__contact-btn" type="button">Заказать звонок</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="breadcrumbs container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">
+                        <svg class="icon-home">
+                            <use xlink:href="images/allsvg.svg#home"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">
+                        Каталог
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">
+                        BMV
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">
+                        525
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="catalog container">
+            <h2 class="catalog__title">защита двигателя bmw 525 </h2>
+            <div class="catalog__grid-style">
+                <button class="catalog__grid-btn active" type="button">
+                    <svg class="icon-grid-blocks">
+                        <use xlink:href="images/allsvg.svg#grid-blocks"></use>
+                    </svg>
+                    <span class="visually-hidden">Показать товары сеткой</span>
+                </button>
+                <button class="catalog__grid-btn" type="button">
+                    <svg class="icon-grid-line">
+                        <use xlink:href="images/allsvg.svg#grid-line"></use>
+                    </svg>
+                    <span class="visually-hidden">Показать товары в линию</span>
+                </button>
+            </div>
+            <div class=" catalog__content">
+                <div class="filter">
+                    <h3 class="filter__title">подобрать защиту</h3>
+                    <div class="filter__body">
+                        <select name="brand" class="filter__select select">
+                            <option value="mark" disabled selected>Выберете марку машины</option>
+                            <option value="BMW">BMW</option>
+                            <option value="TOYOTA">TOYOTA</option>
+                            <option value="NISSAN">NISSAN</option>
+                            <option value="OPEL">OPEL</option>
+                            <option value="BMW">BMW</option>
+                            <option value="TOYOTA">TOYOTA</option>
+                            <option value="NISSAN">NISSAN</option>
+                            <option value="OPEL">OPEL</option>
+                            <option value="BMW">BMW</option>
+                            <option value="TOYOTA">TOYOTA</option>
+                            <option value="NISSAN">NISSAN</option>
+                            <option value="OPEL">OPEL</option>
+                            <option value="BMW">BMW</option>
+                            <option value="TOYOTA">TOYOTA</option>
+                            <option value="NISSAN">NISSAN</option>
+                            <option value="OPEL">OPEL</option>
+                        </select>
+                        <select name="model" class="filter__select select">
+                            <option value="mark" disabled selected>Модель автомобиля</option>
+                            <option value="model">model</option>
+                            <option value="model">model</option>
+                            <option value="model">model</option>
+                            <option value="model">model</option>
+                        </select>
+                        <select name="year" class="filter__select select">
+                            <option value="mark" disabled selected>Год автомобиля</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                        </select>
+                        <select name="brand" class="filter__select select">
+                            <option value="mark" disabled selected>Тип кузова и двигателя</option>
+                            <option value="sedan">Седан</option>
+                            <option value="coope">Купе</option>
+                            <option value="universal">Универсал</option>
+                            <option value="hechback">Хэтчбек</option>
+                        </select>
+                    </div>
+                    <div class="filter__btns">
+                        <button class="filter__btn">
+                            <span class="filter__btn-text">Сбросить</span>
+                        </button>
+                        <button class="filter__btn">
+                            <span class="filter__btn-text">Применить</span>
+                            <svg class="icon-arrow-right">
+                                <use xlink:href="images/allsvg.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog__grid-inner">
+                    <div class="catalog__years">
+                        <ul class="year">
+                            <li class="year__item">1995</li>
+                            <li class="year__item active">1997</li>
+                            <li class="year__item">1999</li>
+                            <li class="year__item">2000</li>
+                            <li class="year__item">2003</li>
+                            <li class="year__item">2005</li>
+                            <li class="year__item">2010</li>
+                            <li class="year__item">2012</li>
+                            <li class="year__item">2014</li>
+                            <li class="year__item">2015</li>
+                            <li class="year__item">2018</li>
+                            <li class="year__item">2019</li>
+                        </ul>
+                        <ul class="year">
+                            <li class="year__item">1995</li>
+                            <li class="year__item">1997</li>
+                            <li class="year__item">1999</li>
+                            <li class="year__item">2000</li>
+                            <li class="year__item">2003</li>
+                        </ul>
+                    </div>
+                    <div class="catalog__grid">
+                        <div class="product-card">
+                            <div class="product-card__img-inner">
+                                <img src="./images/product.png" alt="" class="product-card__img">
+                                <div class="product-card__grade">
+                                    <div class="product-card__feedback">
+                                        <svg class="icon-message">
+                                            <use xlink:href="images/allsvg.svg#message"></use>
+                                        </svg>
+                                        <span class="product-card__feedback-amount">0</span>
+                                        <span class="product-card__feedback-text">отзыв(ов)</span>
+                                    </div>
+                                    <svg class="icon-star">
+                                        <use xlink:href="images/allsvg.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__cost">
+                                    <span class="product-card__price-grn">2 750 грн</span>
+                                    <span class="product-card__number">102.9355.00</span>
+                                </div>
+                                <p class="product-card__name">
+                                    Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                    (Оцинкованная сталь + покрытие)
+                                </p>
+                                <ul class="product-card__more-info">
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Что закрывает:</span>
+                                        <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                    </li>
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Материал:</span>
+                                        <span class="product-card__more-details">серия <span
+                                                class="product-card__accent">Premium</span></span>
+                                    </li>
+                                </ul>
+                                <div class="product-card__btns">
+                                    <button class="product-card__btn">Купить в 1 клик</button>
+                                    <button class="product-card__btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-inner">
+                                <img src="./images/product.png" alt="" class="product-card__img">
+                                <div class="product-card__grade">
+                                    <div class="product-card__feedback">
+                                        <svg class="icon-message">
+                                            <use xlink:href="images/allsvg.svg#message"></use>
+                                        </svg>
+                                        <span class="product-card__feedback-amount">0</span>
+                                        <span class="product-card__feedback-text">отзыв(ов)</span>
+                                    </div>
+                                    <svg class="icon-star">
+                                        <use xlink:href="images/allsvg.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__cost">
+                                    <span class="product-card__price-grn">2 750 грн</span>
+                                    <span class="product-card__number">102.9355.00</span>
+                                </div>
+                                <p class="product-card__name">
+                                    Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                    (Оцинкованная сталь + покрытие)
+                                </p>
+                                <ul class="product-card__more-info">
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Что закрывает:</span>
+                                        <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                    </li>
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Материал:</span>
+                                        <span class="product-card__more-details">серия <span
+                                                class="product-card__accent">Premium</span></span>
+                                    </li>
+                                </ul>
+                                <div class="product-card__btns">
+                                    <button class="product-card__btn">Купить в 1 клик</button>
+                                    <button class="product-card__btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-inner">
+                                <img src="./images/product.png" alt="" class="product-card__img">
+                                <div class="product-card__grade">
+                                    <div class="product-card__feedback">
+                                        <svg class="icon-message">
+                                            <use xlink:href="images/allsvg.svg#message"></use>
+                                        </svg>
+                                        <span class="product-card__feedback-amount">0</span>
+                                        <span class="product-card__feedback-text">отзыв(ов)</span>
+                                    </div>
+                                    <svg class="icon-star">
+                                        <use xlink:href="images/allsvg.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__cost">
+                                    <span class="product-card__price-grn">2 750 грн</span>
+                                    <span class="product-card__number">102.9355.00</span>
+                                </div>
+                                <p class="product-card__name">
+                                    Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                    (Оцинкованная сталь + покрытие)
+                                </p>
+                                <ul class="product-card__more-info">
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Что закрывает:</span>
+                                        <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                    </li>
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Материал:</span>
+                                        <span class="product-card__more-details">серия <span
+                                                class="product-card__accent">Premium</span></span>
+                                    </li>
+                                </ul>
+                                <div class="product-card__btns">
+                                    <button class="product-card__btn">Купить в 1 клик</button>
+                                    <button class="product-card__btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-inner">
+                                <img src="./images/product.png" alt="" class="product-card__img">
+                                <div class="product-card__grade">
+                                    <div class="product-card__feedback">
+                                        <svg class="icon-message">
+                                            <use xlink:href="images/allsvg.svg#message"></use>
+                                        </svg>
+                                        <span class="product-card__feedback-amount">0</span>
+                                        <span class="product-card__feedback-text">отзыв(ов)</span>
+                                    </div>
+                                    <svg class="icon-star">
+                                        <use xlink:href="images/allsvg.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__cost">
+                                    <span class="product-card__price-grn">2 750 грн</span>
+                                    <span class="product-card__number">102.9355.00</span>
+                                </div>
+                                <p class="product-card__name">
+                                    Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                    (Оцинкованная сталь + покрытие)
+                                </p>
+                                <ul class="product-card__more-info">
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Что закрывает:</span>
+                                        <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                    </li>
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Материал:</span>
+                                        <span class="product-card__more-details">серия <span
+                                                class="product-card__accent">Premium</span></span>
+                                    </li>
+                                </ul>
+                                <div class="product-card__btns">
+                                    <button class="product-card__btn">Купить в 1 клик</button>
+                                    <button class="product-card__btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-inner">
+                                <img src="./images/product.png" alt="" class="product-card__img">
+                                <div class="product-card__grade">
+                                    <div class="product-card__feedback">
+                                        <svg class="icon-message">
+                                            <use xlink:href="images/allsvg.svg#message"></use>
+                                        </svg>
+                                        <span class="product-card__feedback-amount">0</span>
+                                        <span class="product-card__feedback-text">отзыв(ов)</span>
+                                    </div>
+                                    <svg class="icon-star">
+                                        <use xlink:href="images/allsvg.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__cost">
+                                    <span class="product-card__price-grn">2 750 грн</span>
+                                    <span class="product-card__number">102.9355.00</span>
+                                </div>
+                                <p class="product-card__name">
+                                    Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                    (Оцинкованная сталь + покрытие)
+                                </p>
+                                <ul class="product-card__more-info">
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Что закрывает:</span>
+                                        <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                    </li>
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Материал:</span>
+                                        <span class="product-card__more-details">серия <span
+                                                class="product-card__accent">Premium</span></span>
+                                    </li>
+                                </ul>
+                                <div class="product-card__btns">
+                                    <button class="product-card__btn">Купить в 1 клик</button>
+                                    <button class="product-card__btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__img-inner">
+                                <img src="./images/product.png" alt="" class="product-card__img">
+                                <div class="product-card__grade">
+                                    <div class="product-card__feedback">
+                                        <svg class="icon-message">
+                                            <use xlink:href="images/allsvg.svg#message"></use>
+                                        </svg>
+                                        <span class="product-card__feedback-amount">0</span>
+                                        <span class="product-card__feedback-text">отзыв(ов)</span>
+                                    </div>
+                                    <svg class="icon-star">
+                                        <use xlink:href="images/allsvg.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__cost">
+                                    <span class="product-card__price-grn">2 750 грн</span>
+                                    <span class="product-card__number">102.9355.00</span>
+                                </div>
+                                <p class="product-card__name">
+                                    Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                    (Оцинкованная сталь + покрытие)
+                                </p>
+                                <ul class="product-card__more-info">
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Что закрывает:</span>
+                                        <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                    </li>
+                                    <li class="product-card__more-item">
+                                        <span class="product-card__more-name">Материал:</span>
+                                        <span class="product-card__more-details">серия <span
+                                                class="product-card__accent">Premium</span></span>
+                                    </li>
+                                </ul>
+                                <div class="product-card__btns">
+                                    <button class="product-card__btn">Купить в 1 клик</button>
+                                    <button class="product-card__btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="catalog__more" type="button">
+                        <span class="catalog__more-text">Показать еще 6 защит</span>
+                        <svg class="icon-arrow-circle">
+                            <use xlink:href="images/allsvg.svg#arrow-circle"></use>
+                        </svg>
+                    </button>
+                    <ul class="pagination">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link"> <svg class="icon-dable-arrow-left">
+                                    <use xlink:href="images/allsvg.svg#dable-arrow-left"></use>
+                                </svg></a>
+                            <a href="#" class="pagination__link"> <svg class="icon-arrow-left">
+                                    <use xlink:href="images/allsvg.svg#arrow-left"></use>
+                                </svg></a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">....</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">65</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                <svg class="icon-dable-arrow-left icon-dable-arrow-left--right">
+                                    <use xlink:href="images/allsvg.svg#dable-arrow-left"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="pagination__link">
+                                <svg class="icon-arrow-left icon-arrow-left--right">
+                                    <use xlink:href="images/allsvg.svg#arrow-left"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="recently container">
+            <h2 class="recently__title">недавно смотрели</h2>
+            <div class="recently__slider">
+                <div class="recently__item">
+                    <div class="product-card">
+                        <div class="product-card__img-inner">
+                            <img src="./images/product.png" alt="" class="product-card__img">
+                            <div class="product-card__grade">
+                                <div class="product-card__feedback">
+                                    <svg class="icon-message">
+                                        <use xlink:href="images/allsvg.svg#message"></use>
+                                    </svg>
+                                    <span class="product-card__feedback-amount">0</span>
+                                    <span class="product-card__feedback-text">отзыв(ов)</span>
+                                </div>
+                                <svg class="icon-star">
+                                    <use xlink:href="images/allsvg.svg#star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <div class="product-card__cost">
+                                <span class="product-card__price-grn">2 750 грн</span>
+                                <span class="product-card__number">102.9355.00</span>
+                            </div>
+                            <p class="product-card__name">
+                                Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                (Оцинкованная сталь + покрытие)
+                            </p>
+                            <ul class="product-card__more-info">
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Что закрывает:</span>
+                                    <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                </li>
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Материал:</span>
+                                    <span class="product-card__more-details">серия <span
+                                            class="product-card__accent">Premium</span></span>
+                                </li>
+                            </ul>
+                            <div class="product-card__btns">
+                                <button class="product-card__btn">Купить в 1 клик</button>
+                                <button class="product-card__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recently__item">
+                    <div class="product-card">
+                        <div class="product-card__img-inner">
+                            <img src="./images/product.png" alt="" class="product-card__img">
+                            <div class="product-card__grade">
+                                <div class="product-card__feedback">
+                                    <svg class="icon-message">
+                                        <use xlink:href="images/allsvg.svg#message"></use>
+                                    </svg>
+                                    <span class="product-card__feedback-amount">0</span>
+                                    <span class="product-card__feedback-text">отзыв(ов)</span>
+                                </div>
+                                <svg class="icon-star">
+                                    <use xlink:href="images/allsvg.svg#star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <div class="product-card__cost">
+                                <span class="product-card__price-grn">2 750 грн</span>
+                                <span class="product-card__number">102.9355.00</span>
+                            </div>
+                            <p class="product-card__name">
+                                Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                (Оцинкованная сталь + покрытие)
+                            </p>
+                            <ul class="product-card__more-info">
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Что закрывает:</span>
+                                    <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                </li>
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Материал:</span>
+                                    <span class="product-card__more-details">серия <span
+                                            class="product-card__accent">Premium</span></span>
+                                </li>
+                            </ul>
+                            <div class="product-card__btns">
+                                <button class="product-card__btn">Купить в 1 клик</button>
+                                <button class="product-card__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recently__item">
+                    <div class="product-card">
+                        <div class="product-card__img-inner">
+                            <img src="./images/product.png" alt="" class="product-card__img">
+                            <div class="product-card__grade">
+                                <div class="product-card__feedback">
+                                    <svg class="icon-message">
+                                        <use xlink:href="images/allsvg.svg#message"></use>
+                                    </svg>
+                                    <span class="product-card__feedback-amount">0</span>
+                                    <span class="product-card__feedback-text">отзыв(ов)</span>
+                                </div>
+                                <svg class="icon-star">
+                                    <use xlink:href="images/allsvg.svg#star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <div class="product-card__cost">
+                                <span class="product-card__price-grn">2 750 грн</span>
+                                <span class="product-card__number">102.9355.00</span>
+                            </div>
+                            <p class="product-card__name">
+                                Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                (Оцинкованная сталь + покрытие)
+                            </p>
+                            <ul class="product-card__more-info">
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Что закрывает:</span>
+                                    <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                </li>
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Материал:</span>
+                                    <span class="product-card__more-details">серия <span
+                                            class="product-card__accent">Premium</span></span>
+                                </li>
+                            </ul>
+                            <div class="product-card__btns">
+                                <button class="product-card__btn">Купить в 1 клик</button>
+                                <button class="product-card__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recently__item">
+                    <div class="product-card">
+                        <div class="product-card__img-inner">
+                            <img src="./images/product.png" alt="" class="product-card__img">
+                            <div class="product-card__grade">
+                                <div class="product-card__feedback">
+                                    <svg class="icon-message">
+                                        <use xlink:href="images/allsvg.svg#message"></use>
+                                    </svg>
+                                    <span class="product-card__feedback-amount">0</span>
+                                    <span class="product-card__feedback-text">отзыв(ов)</span>
+                                </div>
+                                <svg class="icon-star">
+                                    <use xlink:href="images/allsvg.svg#star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <div class="product-card__cost">
+                                <span class="product-card__price-grn">2 750 грн</span>
+                                <span class="product-card__number">102.9355.00</span>
+                            </div>
+                            <p class="product-card__name">
+                                Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                (Оцинкованная сталь + покрытие)
+                            </p>
+                            <ul class="product-card__more-info">
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Что закрывает:</span>
+                                    <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                </li>
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Материал:</span>
+                                    <span class="product-card__more-details">серия <span
+                                            class="product-card__accent">Premium</span></span>
+                                </li>
+                            </ul>
+                            <div class="product-card__btns">
+                                <button class="product-card__btn">Купить в 1 клик</button>
+                                <button class="product-card__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recently__item">
+                    <div class="product-card">
+                        <div class="product-card__img-inner">
+                            <img src="./images/product.png" alt="" class="product-card__img">
+                            <div class="product-card__grade">
+                                <div class="product-card__feedback">
+                                    <svg class="icon-message">
+                                        <use xlink:href="images/allsvg.svg#message"></use>
+                                    </svg>
+                                    <span class="product-card__feedback-amount">0</span>
+                                    <span class="product-card__feedback-text">отзыв(ов)</span>
+                                </div>
+                                <svg class="icon-star">
+                                    <use xlink:href="images/allsvg.svg#star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <div class="product-card__cost">
+                                <span class="product-card__price-grn">2 750 грн</span>
+                                <span class="product-card__number">102.9355.00</span>
+                            </div>
+                            <p class="product-card__name">
+                                Защита двигателя,КПП и радиатора Chevrolet Aveo Т-200 2002-2008, Premium
+                                (Оцинкованная сталь + покрытие)
+                            </p>
+                            <ul class="product-card__more-info">
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Что закрывает:</span>
+                                    <span class="product-card__more-details">двигатель, КПП, радиатор</span>
+                                </li>
+                                <li class="product-card__more-item">
+                                    <span class="product-card__more-name">Материал:</span>
+                                    <span class="product-card__more-details">серия <span
+                                            class="product-card__accent">Premium</span></span>
+                                </li>
+                            </ul>
+                            <div class="product-card__btns">
+                                <button class="product-card__btn">Купить в 1 клик</button>
+                                <button class="product-card__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="choice-us container">
+            <h2 class="choice-us__title">Почему клиенты выбирают нас</h2>
+            <ul class="choice-us__content">
+                <li class="choice-us__item choice-us__item--material">
+                    <h3 class="choice-us__subtitle">Сырье</h3>
+                    <p class="choice-us__text">Качественное сырьё – высокопрочная сталь с полимерным покрытием</p>
+                </li>
+                <li class="choice-us__item choice-us__item--garant">
+                    <h3 class="choice-us__subtitle">Гарантия</h3>
+                    <p class="choice-us__text">Гарантия на 10 тыс. км пробега автомобиля</p>
+                </li>
+                <li class="choice-us__item choice-us__item--price">
+                    <h3 class="choice-us__subtitle">Цена</h3>
+                    <p class="choice-us__text">Вы будете удивлены, цена от производителя</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <a href="#" class="logo footer__logo">
+                <img src="../images/logo.png" alt="" class="logo__img">
+            </a>
+            <div class="footer__top">
+                <address class="footer__address">
+                    <a href="tel:+380990101500" class="footer__address-tel">+38(099) 01 01 500</a>
+                    <ul class="footer__address-list">
+                        <li class="footer__address-item">
+                            Пн.- Пт. 9:00 -19:00;
+                        </li>
+                        <li class="footer__address-item">
+                            Сб. 10.00 - 17.00
+                        </li>
+                    </ul>
+                    <p class="footer__address-address">
+                        <span class="footer__address-city">Адрес: г. Одесса, </span>
+                        <span class="footer__address-street">ул. Название-улицы №130 </span>
+                    </p>
+                </address>
+                <ul class="menu footer__menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Установка/Монтаж</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">FAQ</a>
+                    </li>
+                </ul>
+                <ul class="menu footer__menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Доставка и оплата</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Контакты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Публичный договор</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Карта сайта</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Акции</a>
+                    </li>
+                </ul>
+                <div class="footer__delivery-payment">
+                    <div class="footer__delivery">
+                        <h3 class="footer__subtitle">Быстрая доставка</h3>
+                        <div class="footer__delivery-inner">
+                            <img src="./images/new-post.png" alt="" class="footer__img">
+                            <img src="./images/some-post.png" alt="" class="footer__img">
+                            <img src="./images/urk-post.png" alt="" class="footer__img">
+                            <img src="./images/del-post.png" alt="" class="footer__img">
+                        </div>
+                    </div>
+                    <div class="footer__payment">
+                        <h3 class="footer__subtitle">Удобная оплата</h3>
+                        <div class="footer__delivery-inner">
+                            <img src="./images/mastercard.png" alt="" class="footer__img">
+                            <img src="./images/visa.png" alt="" class="footer__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__down">
+                <div class="footer__social">
+                    <a href="#" class="footer__social-img">
+                        <svg class="icon-instagram">
+                            <use xlink:href="images/allsvg.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-img">
+                        <svg class="icon-facebook">
+                            <use xlink:href="images/allsvg.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-img">
+                        <svg class="icon-youtube">
+                            <use xlink:href="images/allsvg.svg#youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    Designed by 16.web
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modals">
+        <div class="modal__user"></div>
+        <div class="modal__card"></div>
+        <div class="modal__callback"></div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
