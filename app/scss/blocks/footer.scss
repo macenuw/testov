@@ -85,6 +85,7 @@
   &__delivery-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     grid-gap: 25px 45px;
   }
 
