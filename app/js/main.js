@@ -9,18 +9,34 @@ $(function () {
     autoplaySpeed: 2000,
 
     responsive: [{
-        breakpoint: 768,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
           centerPadding: 50,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 730,
         settings: {
           slidesToShow: 1,
         }
       }
     ]
   });
+  $(".user__item-mob--search").on("click", function () {
+    $(".user__search").toggleClass("active");
+  })
+  $(".header-mob__search-btn-close").on("click", function () {
+    $(".user__search").removeClass("active");
+  })
+  $(".header-mob__menu-item--company").on("click", function () {
+    $(".header-mob__menu-item--company").toggleClass("active");
+  })
+  $(".header-mob__btn").on("click", function () {
+    $(".header-mob__btn").toggleClass("active");
+    $(".header-mob__menu").toggleClass("active");
+  })
+  $(".filter__title").on("click", function () {
+    $(".filter").toggleClass("active");
+  })
 })

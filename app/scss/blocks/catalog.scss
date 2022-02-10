@@ -13,12 +13,21 @@
   &__content {
     display: flex;
     align-items: flex-start;
+
+    @media (max-width:1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__grid-style {
     position: absolute;
     top: 8px;
     right: 0;
+
+    @media (max-width:1024px) {
+      display: none;
+    }
   }
 
   &__grid-btn {
@@ -47,6 +56,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2px;
+
+    @media (max-width:1100px) {
+      grid-gap: 20px;
+    }
+
+    @media (max-width:720px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
   }
 
   &__more {
@@ -62,6 +80,7 @@
       .icon-arrow-circle {
         animation-name: circle;
         animation-duration: 1.5s;
+        fill: $green;
       }
     }
   }
@@ -72,6 +91,10 @@
     line-height: 32px;
     color: #464646;
     margin-right: 28px;
+
+    @media (max-width:720px) {
+      font-size: 16px;
+    }
   }
 }
 

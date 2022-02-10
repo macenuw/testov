@@ -2,16 +2,33 @@
   background-color: $black;
   padding: 150px 0;
 
+  @media (max-width:880px) {
+    padding: 60px 0;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 133px;
+
+    @media (max-width:880px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 60px;
+    }
   }
 
   &__address {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width:880px) {
+      order: 3;
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
   }
 
   &__address-tel {
@@ -21,10 +38,32 @@
     font-style: normal;
     color: #FFFFFF;
     margin-bottom: 33px;
+
+    @media (max-width:880px) {
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    @media (max-width:460px) {
+      text-align: left;
+    }
   }
 
   &__address-list {
     margin-bottom: 33px;
+
+    @media (max-width:880px) {
+      width: 49%;
+      order: 3;
+      text-align: center;
+    }
+
+    @media (max-width:460px) {
+      text-align: left;
+    }
   }
 
   &__address-item {
@@ -33,6 +72,11 @@
     line-height: 32px;
     font-style: normal;
     color: #FFFFFF;
+
+    @media (max-width:880px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   &__address-address {
@@ -43,6 +87,18 @@
     line-height: 32px;
     font-style: normal;
     color: #FFFFFF;
+
+    @media (max-width:880px) {
+      width: 49%;
+      order: 2;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    @media (max-width:460px) {
+      text-align: left;
+    }
   }
 
   &__address-city {}
@@ -53,6 +109,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media (max-width:880px) {
+      margin-bottom: 60px;
+    }
 
     .menu__item {
       padding: 0;
@@ -72,6 +132,12 @@
 
   &__delivery-payment {
     display: flex;
+
+    @media (max-width:880px) {
+      margin-bottom: 60px;
+      width: 100%;
+      justify-content: space-around;
+    }
   }
 
   &__subtitle {

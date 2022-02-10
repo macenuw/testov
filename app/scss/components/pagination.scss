@@ -39,6 +39,10 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width:520px) {
+      width: 30px;
+    }
+
     &:hover {
       border-color: #111111;
       color: #111111;
