@@ -12,9 +12,17 @@
 
   &__item {
     margin: 0 10px;
+
+    @media (max-width:730px) {
+      margin: 0;
+    }
   }
 
   .slick-slide {
     margin-right: 10px;
+
+    @media (max-width:730px) {
+      margin: 2px;
+    }
   }
 }
