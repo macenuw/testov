@@ -24,10 +24,10 @@ $(function () {
     ]
   });
   $(".user__item-mob--search").on("click", function () {
-    $(".user__search").toggleClass("active");
+    $(".header-mob__search-inner").toggleClass("active");
   })
   $(".header-mob__search-btn-close").on("click", function () {
-    $(".user__search").removeClass("active");
+    $(".header-mob__search-inner").removeClass("active");
   })
   $(".header-mob__menu-item--company").on("click", function () {
     $(".header-mob__menu-item--company").toggleClass("active");

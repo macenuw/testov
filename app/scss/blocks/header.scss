@@ -174,7 +174,7 @@
     justify-content: space-between;
   }
 
-  .user__search {
+  &__search-inner {
     position: absolute;
     top: 25%;
     right: 20px;
@@ -185,11 +185,18 @@
     transform: translateX(-800px);
     transition: .3s;
     padding: 0 20px;
+    display: flex;
+    align-items: center;
 
     &.active {
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  .user__search {
+    width: 100%;
+    max-width: 100%;
   }
 
   .user__search-dec {
